@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <base href="{% static 'base/' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    {% block title %}<title>Game started</title>{% endblock %}
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+</head>
+
+<body id="page-top">
+          <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <h2>👩‍💻 Speed Typer 👨‍💻</h2>
+          </nav> 
+          {% block content %}
+          
+          {% if text %}   
+          <center>
+                <form id="settings-form">
+                  <label for="difficulty">Difficulty</label>
+                  <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                  </select>
+              </form>
+          </center>
+          <br>
+          
+          <center>
+               <h6 class="text-primary font-weight-bold m-0">Type the following passage:</h6>
+          </center>
+          <br>
+          <form method="POST">
+          <center>
+            <textarea name="result2" id="" cols="140" rows="10" class="form-control" style="color: black">{{text}}</textarea>
+          </center>
+          <br>
+          
+          <center>
+             <Strong id="end-game-container" style="color: red"></Strong>
+          </center>
+          
+          <center>
+            <p class="time-container" style="color: black;">Time left: <span id="time">10s</span></p>
+           
+          </center>
+          
+          
+            <center>
+              <textarea id="Stop" class="form-control" name="result" id="" cols="100" rows="5" style="color: black"></textarea>
+           </center>
+           {% csrf_token %}
+           <center>
+           <input class="btn btn-primary btn-sm d-none d-sm-inline-block" type="submit" value="Click to check score">
+           </center>
+           
+          </form>
+          <br>
+
+        
+        {% endif %}
+        
+        {% if lenofConverted_Givenstring_to_list %}
+          <center><h2>
+            Number of words in give paragraph is {{lenofConverted_Givenstring_to_list}} <br>
+            Number of words you entred is {{lenofConverted_Resultstring_to_list}} <br>
+            Number of correct words is {{lenofCount}} <br>
+            <h3><a href="{% url 'App' %}">Click here</a> to start again</h3>
+            <h4>OR</h4> 
+            <h3><a href="{% url 'start' %}">Click here</a> to go Home</h3>
+          </h2>
+          </center>
+        {% endif %}
+        {% endblock %}
+
+        
+        <footer class="bg-white sticky-footer">
+          <div class="container my-auto">
+              <div class="text-center my-auto copyright"><span>Copyright © Brand 2022</span></div>
+          </div>
+      </footer>
+        
+        <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

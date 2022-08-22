@@ -1,0 +1,11 @@
+TIME COMPLEXITY: Helps to analys which DS take less time to perform DS operations.
+There are 3 types of time complexity. We perform store,search,add,delete operation 
+on N number of data to different data structure.
+1. Best case : Big Omega(Omega symbol) Helps to find best data structure apart form two or 
+more number of DS to perform store, search,add,delete,modify operation in quick
+way and less time.It actually gives time complexity result for 10-100 opeations,
+2. Average case: Big Teata(teata symbol) Finds average time of execution process of an data structure.
+3. Worst Case: Big O(O) Find worst data structure that take of alot of time to perform DS operations. 
+O(N)
+* If you don't know the times of execution program it will be represented as O(n)
+for i in range(n):print(i) 

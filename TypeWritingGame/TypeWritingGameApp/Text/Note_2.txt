@@ -1,0 +1,3 @@
+What are the Linear data structures? An node has only one neighbour and predefined extremes extremes means an stack has top,bottom,
+an Queue has front,rear * Array * Linked list * Stack * Queue What are the Non-Linear data structure? 
+A node has n neighbours and has no prefined extremes. * Binary tree * Binary Search tree * Graph

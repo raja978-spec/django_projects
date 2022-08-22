@@ -1,0 +1,13 @@
+ARRAYS * An array is an linear data structure, Contigous memory allocation.
+* Access element randomly and it is an collection of similar data type.
+ADVANTAGES OF ARRAY * Randomly accessing element. * Easy sorting and iteration.
+DISADVANTAGES OF ARRAY * Size is fixed. * Difficult to insert and delete, 
+if you are trying to insert or delete some elements into the array all are the elements will be swaped to next's index.
+* If the capacity is most and occupy is lesss then more amount of array gets wasted. * Needs contigous memory.
+ONE DIMENSIONAL ARRAY [298,305,320,301,292] This values are store in memory like this
+0x00500 - 298 - 298 stored as binary format form 500-503
+0x00504 - 305 - stored 504 to 507
+0x00508 - 320
+0x0050A - 301
+0x0050F - 292
+TWO DIMENSIONAL ARRAY int x[10][20] 10- number of rows, 20- number of columns So the total size and number of elements or spaces in array is 10*20 = 2000

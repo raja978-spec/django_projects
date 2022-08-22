@@ -1,0 +1,8 @@
+LINEAR SEARCHING It checks each and evey element in the rest of the array. Returns the element when it is find. EX:
+TIME AND SPACE COMPLEXITY OF LINEAR SEARCH * Here we compare all the element to find particular element that is considered as worst case O(n) and Average case.
+* If the given element in first place then it is considered as best case O(1).
+* And there is no need to create extra to find element so the space complexity is we just search the element in only one
+space where the array elements are stored, so the space
+complexity is O(1).
+
+

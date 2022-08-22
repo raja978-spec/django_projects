@@ -1,0 +1,3 @@
+TIME AND SPACE COMPLEXITY OF BINARY SEARCH * It uses log(n) as worst and average case we already know that in time complexity log is used to find the number of stpes to find an element in divide and conqure method.
+* And the best case it when the target element going to be searched element is in middle place then the progam takes O(1) execution.
+* And the space complexity is O(1) Because Binary uses only one space that is the given array's space.

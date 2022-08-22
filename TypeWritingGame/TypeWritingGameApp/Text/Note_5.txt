@@ -1,0 +1,6 @@
+THREE DIMENSIONAL ARRAY int arr[2][3][3] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12},{13,14,15},{16,17,18}};
+Means an array has 2 three dimensional matrix, so number of the elements or space in array is 2*3*3 = 18
+ACCESSING THREE DIMENSIONAL ARRAY
+i - index of two 3*3 dimensional array EX: {1,2,3},{4,5,6},{7,8,9},{10,11,12},{13,14,15},{16,17,18}
+j - index of 3*3 diamensional array elements EX: {1,2,3},{4,5,6},{7,8,9},
+k - index of inner 3*3 diamensinal array elements EX: {1,2,3}

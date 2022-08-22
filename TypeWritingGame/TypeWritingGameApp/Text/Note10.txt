@@ -1,0 +1,7 @@
+FIBONNIC SEARCH * Fibonnic search is an comparison based technique that uses fibonnic numbers (0,1,1,2,3,5,8,13,21,..) to search an element in an sorted array. * This search aslo uses the divide and conqure method. * Time complexity of this search is same as binary that is O(log(n))
+ALGORITHM: Step1: Find the smallest fibonnic series number(K) that should be greater than or equal to size of the array. And find the k-1 position of the fibonnic series
+EX: If the size of the array is 10 then the smallest number is 13 because 13 >= 10, So 13 is considerd as K and K-1 position of 13 is that's previous number of the fibonnic series that is 8. Consider that 8 as array's index to find element.
+Step2:  Find if key(Element we are going to search) and array index element a[8] are equal then return the index. 
+EX: a is the array which has 10 element check if key == a[8] Step3 and 4: if key > a[8] then beg = beg+index+1 or if key < a[8] end= beg-index-1. And we have to reduce the size of the array. Let n is the size of the array n=end-low+1
+EX: 10,20,30,40,50,60,70,80,90,100 Here 40 < 90 so end = 0-8-1 =7 n= 7-0+1 = 8 Now the size of the array element is 10,20,30,40,50 60,70,80. We have to search within this range[0-7].
+Step5: Repate Steps from 1-4 until find the key

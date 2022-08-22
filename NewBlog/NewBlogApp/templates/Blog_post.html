@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Blog Post- Raze Blog</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'Blog_post_CSS/assets/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="{% static 'Blog_post_CSS/assets/fonts/font-awesome.min.css'%}">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#">RAZE BLOG</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div
+                class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'login'%}">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'about'%}">About us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'contact'%}">Contact us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'blogpost'%}">Blog Post</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+     <header class="masthead" id="header5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="site-heading">
+                        <h1>Welcome to Raze Blog</h1><span class="subheading">Explore your intrest with us</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% for i in user_created_blogs %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8">
+                <div class="post-preview">
+                        <a href="fullviewpost/{{i.id}}">
+                            <h4 class="post-title">{{i.title}}</h4>
+                            <h5 class="post-subtitle">{{i.subtitle}}</h5>
+                        </a>
+                        
+                    <p class="post-meta">Posted by&nbsp;<a href="#">{{i.user}}</a></p>
+                    <p class="post-meta">Posted on&nbsp;<a href="#">{{i.date}}</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {% endfor %}
+    <div class="clearfix"><button class="btn btn-primary float-right" type="button">Oldets&nbsp;⇒</button></div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
+                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
+                    </ul>
+                    <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Raze Blog 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'Blog_post_CSS/assets/js/jquery.min.js'%}"></script>
+    <script src="{% static 'Blog_post_CSS/assets/bootstrap/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'Blog_post_CSS/assets/js/clean-blog.js'%}"></script>
+</body>
+
+</html>

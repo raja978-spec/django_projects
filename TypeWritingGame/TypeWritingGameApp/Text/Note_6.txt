@@ -1,0 +1,6 @@
+POINTERS A special type of variable that holds the address of an memory. All the pointer points the intial element
+of the memory address INITILIZATION OF POINTER data_type *point_name; An pointer must be initilized by an address. That why
+we need & operator. Without this it will raise error. int x=5; int *ptr= &x; *ptr points the address of x.
+print("%d",*ptr) // here *ptr access the value of the address of x *ptr = 4 // We can change the value of that address by defining this
+int x,y=20;int *ptr1,*ptr2 = &y; ptr1 = ptr2; // Assings one memory address to another pointer
+print("%d",*ptr1) // Accessing the value of the memory address *ptr1 = *ptr2 is not equal to ptr1 = ptr2

@@ -1,0 +1,3 @@
+DATA TYPES char - Stores Single character has two types signed and unsigned character int  - Stores Integers has 3 types short,int,long this 3 types are classified into 2 types that is signed and unsigned
+float - Integers with single precision has 3 types float, double, long double void SIZES DATA TYPE - SIZE - RANGE - MODIFIERS short int - 2 bytes - -32,768 to 32,767 - %hd unsigned shortint - 2bytes - 0 to 65,535 - %hu unsigned int - 4 bytes - 0 to 4,294, 967, 295 - %u
+int - 4 - %d long int - 4 - %ld unsigned long int - 4 - %lu long long int - 8 - %lld unsigned long long int - 8 - %llu unsigned char - 1 - 0 to 255 - %c float - 4 - %f double - 8 - %lf long double - 16 - %lf
