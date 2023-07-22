@@ -57,8 +57,8 @@ def Country():
     return newcaptial   
  
 def Main(request):
-    r=[i for i in newcaptial.values() if i=="Data not found"].__len__()
-    s=[i for i in newcaptial.values() if i=="Not found"].__len__()
+    r=[i for i in Country().values() if i=="Data not found"]
+    s=[i for i in getCaptial().values() if i=="Not found"]
     return render(request,"home.html",{"new":r,"old":s})
 
 
