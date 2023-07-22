@@ -24,8 +24,8 @@ def getCaptial():
     return oldcap
 
 def Main(request):
-    captial=getCaptial()
-    return render(request,'home.html',{"captial":captial})
+    #captial=getCaptial().items()
+    return render(request,'home.html',{"captial":" "})
 
 
 
