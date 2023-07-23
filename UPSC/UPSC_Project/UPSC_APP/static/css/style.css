@@ -1,19 +1,84 @@
-body{
-
-    background-color: #eee; 
-}
-
-table th , table td{
-    text-align: center;
-}
-
-table tr:nth-child(even){
-    background-color: #BEF2F5
-}
-
-.pagination li:hover{
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-right: 5px;
+  }
+  
+  #results {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+  } table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .btn-edit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
     cursor: pointer;
-}
-		table tbody tr {
-			display: none;
-		}
+  }
+  
+  .btn-edit:hover {
+    background-color: #45a049;
+  }
+  /* Existing styles... */
+
+div {
+    margin-bottom: 10px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .pagination button:hover {
+    background-color: #45a049;
+  }
+  
